@@ -8,7 +8,7 @@ import { GalleryService } from '../service/gallery.service';
 })
 export class GalleryComponent implements OnInit {
 
-  private galleries = [];
+   galleries = [];
 
   constructor(private _galleryService : GalleryService) { }
 

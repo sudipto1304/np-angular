@@ -8,7 +8,7 @@ import { InstapostService } from '../service/instapost.service';
 })
 export class InstagrampostComponent implements OnInit {
 
-  private instaPosts = [];
+   instaPosts = [];
 
   constructor(private _instaService : InstapostService) { }
 
