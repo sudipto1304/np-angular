@@ -1,0 +1,16 @@
+<section class="instagram_area">
+        
+        <div class="container box_1620">
+            <div class="insta_btn">
+                <a class="btn theme_btn" href="https://www.instagram.com/nilsexposure/" target="_blank">Follow me on instagram</a>
+            </div>
+            <div class="instagram_image row m0">
+                    <ng-container *ngFor="let post of instaPosts">
+                            <div class="adjustdiv"><a href="{{post['postLink']}}" target="_blank"><img src="{{post['imageLink']}}" class="adjust"></a></div>
+                    </ng-container>
+            </div>
+        </div>
+    </section>
+
+
+

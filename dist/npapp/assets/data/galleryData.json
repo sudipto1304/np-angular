@@ -1,0 +1,10 @@
+[
+    {"image" : "../../assets/img/gallery/gallery-1.jpg", "category" : "Artifact", "type" : "ARTIFACT", "id" : "ARTIFACT_LIGHT"},
+    {"image" : "../../assets/img/gallery/gallery-2.jpg", "category" : "Building", "type" : "BUILDING", "id" : "BUILDING_LIGHT"},
+    {"image" : "../../assets/img/gallery/gallery-3.jpg", "category" : "Art and Sculpture", "type" : "ART", "id" : "ART_LIGHT"},
+    {"image" : "../../assets/img/gallery/gallery-4.jpg", "category" : "Long Exposure", "type" : "LONG_EXPOSURE", "id" : "LONG_EXPOSURE_LIGHT"},
+    {"image" : "../../assets/img/gallery/gallery-5.jpg", "category" : "Streets", "type" : "STREET", "id" : "STREET_LIGHT"},
+    {"image" : "../../assets/img/gallery/gallery-6.jpg", "category" : "Roads", "type" : "ROAD", "id" : "ROAD_LIGHT"},
+    {"image" : "../../assets/img/gallery/gallery-7.jpg", "category" : "Pure Nature", "type" : "NATURE", "id" : "NATURE_LIGHT"},
+    {"image" : "../../assets/img/gallery/gallery-8.jpg", "category" : "Travel", "type" : "TRAVEL", "id" : "TRAVEL_LIGHT"}
+]
