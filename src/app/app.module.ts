@@ -14,7 +14,7 @@ import { GalleryService } from './service/gallery.service';
 import { InstapostService } from './service/instapost.service';
 import { FormsModule } from '@angular/forms';
 import { InstagrampostComponent } from './instagrampost/instagrampost.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,8 @@ import { InstagrampostComponent } from './instagrampost/instagrampost.component'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     GalleryService,

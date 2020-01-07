@@ -28,10 +28,11 @@
                                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" [(ngModel)]="query.name">
                                    </div>
                                    <div class="form-group">
-                                       <input type="text" class="form-control" id="mobile" name="contactNumber" placeholder="Enter your contact number" [(ngModel)]="query.mobile">
+                                       <input type="text" class="form-control" id="mobile" (keyup)="phoneValidation($event)" name="contactNumber" placeholder="Enter your contact number (10 digit only)" [(ngModel)]="query.mobile">
                                    </div>
                                    <div class="form-group">
-                                       <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" [(ngModel)]="query.email">
+                                       <input type="email" class="form-control" id="email" (keyup)="emailValidation($event)" name="email" placeholder="Enter email address" [(ngModel)]="query.email" >
+            
                                    </div>
                                </div>
                                <div class="col-md-6">
