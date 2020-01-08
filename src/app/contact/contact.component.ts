@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { QueryData } from '../model/query';
 import { EmailService } from '../service/email.service';
 
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -11,7 +12,7 @@ export class ContactComponent implements OnInit {
 
   error : boolean = true;
   query = new QueryData();
-  response : string;
+  response : any;
   mailformat : string =  "^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$";
   phoneFormat : string =  "^[0-9]{10}$";
   constructor(private emailService : EmailService) { }
@@ -34,8 +35,15 @@ export class ContactComponent implements OnInit {
         console.log(this.query.mobile);
         console.log(this.query.email);
         console.log(this.query.message);
-        this.emailService.sendEmail(this.query).subscribe(data=>this.response = data);
-        alert(this.response);
+        this.emailService.sendEmail(this.query).subscribe(data=>{
+          window.alert(data.message)
+          this.query.name="";
+          this.query.mobile="";
+          this.query.email="";
+          this.query.message="";
+          this.error=true;
+       });
+        
       }else{
         alert("Please correct the highlited error");
       }
